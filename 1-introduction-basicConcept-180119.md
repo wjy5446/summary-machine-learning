@@ -101,7 +101,7 @@ linear regression을 binary classification으로 변환하는 방법
      >
      > $\mu(\mathbf{x})=Ber(y|\mu(\mathbf{x}))$
      >
-     > $\mu(\mathbf{x})=\mathbb{E}[y|\mathbf{x}=p(y=1|\mathbf{x})]$
+     > $\mu(\mathbf{x})=\mathbb{E}[y|\mathbf{x}]=p(y=1|\mathbf{x})$
 
      ​	
 
@@ -110,6 +110,8 @@ linear regression을 binary classification으로 변환하는 방법
      > $\mu(\mathbf{x})=sigm(\mathbf{w}^T\mathbf{x})$
 
      $sigm(\eta)$ : sigmoid function, logistic function, logit function, squashing function
+
+     - 쓰는 이유 : 베르누이의 파라메터인 y=1일 때의 확률p을 넣어주어야 하기 때문에 (0, 1)사이의 값으로 만들어 주어야 한다.
 
      > $sigm(\eta)={1 \over 1+exp(-\eta)}={e^\eta \over e^\eta+1}$
 
